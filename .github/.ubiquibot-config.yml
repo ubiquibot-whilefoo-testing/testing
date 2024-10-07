@@ -1,0 +1,9 @@
+plugins:
+  - uses:
+    - plugin: ubiquity-whilefoo/telegram-bot@development
+      with:
+        botId: 140982736
+  - uses:  
+    - plugin: http://localhost:3000
+      with:
+        botId: 140982736
