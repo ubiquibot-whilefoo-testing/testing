@@ -16,4 +16,4 @@ plugins:
            - "Priority: 4 (Urgent)"
            - "Priority: 5 (Emergency)"
   - uses:
-    - plugin: ubiquity-whilefoo/test-action-signature
+    - plugin: ubiquity-whilefoo/test-action-signature@test
