@@ -4,16 +4,16 @@ plugins:
       with:
         labels:
          time:
-           - "Time: <1 Hour"
-           - "Time: <2 Hours"
-           - "Time: <4 Hours"
-           - "Time: <1 Day"
-           - "Time: <1 Week"
+           - name: "Time: <1 Hour"
+           - name: "Time: <2 Hours"
+           - name: "Time: <4 Hours"
+           - name: "Time: <1 Day"
+           - name: "Time: <1 Week"
          priority:
-           - "Priority: 1 (Normal)"
-           - "Priority: 2 (Medium)"
-           - "Priority: 3 (High)"
-           - "Priority: 4 (Urgent)"
-           - "Priority: 5 (Emergency)"
+           - name: "Priority: 1 (Normal)"
+           - name: "Priority: 2 (Medium)"
+           - name: "Priority: 3 (High)"
+           - name: "Priority: 4 (Urgent)"
+           - name: "Priority: 5 (Emergency)"
   - uses:
     - plugin: http://localhost:4000
