@@ -23,3 +23,5 @@ plugins:
     - plugin: http://localhost:4003
   - uses:
     - plugin: http://localhost:4005
+      with:
+        model: "gpt-4o-mini"
