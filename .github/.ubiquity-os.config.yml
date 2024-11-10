@@ -17,3 +17,5 @@ plugins:
            - name: "Priority: 5 (Emergency)"
   - uses:
     - plugin: http://localhost:4000
+  - uses:
+    - plugin: http://localhost:4002
