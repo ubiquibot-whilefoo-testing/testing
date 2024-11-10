@@ -21,3 +21,5 @@ plugins:
     - plugin: http://localhost:4002
   - uses:
     - plugin: http://localhost:4003
+  - uses:
+    - plugin: http://localhost:4005
