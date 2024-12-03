@@ -25,3 +25,5 @@ plugins:
     - plugin: http://localhost:4005
       with:
         model: "gpt-4o-mini"
+  - uses:
+    - plugin: ubiquity-whilefoo/daemon-disqualifier@development
