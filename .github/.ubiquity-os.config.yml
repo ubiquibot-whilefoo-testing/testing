@@ -37,4 +37,4 @@ plugins:
   - uses:
     - plugin: ubiquity-whilefoo/daemon-disqualifier@development
   - uses:
-    - plugin: ubiquity-whilefoo/test-plugin-2@development
+    - plugin: ubiquity-whilefoo/test-plugin-2@main
