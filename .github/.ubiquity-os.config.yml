@@ -34,7 +34,7 @@ plugins:
     - plugin: http://localhost:4005
       with:
         model: "gpt-4o-mini"
+  #- uses:
+  #  - plugin: ubiquity-whilefoo/daemon-disqualifier@development
   - uses:
-    - plugin: ubiquity-whilefoo/daemon-disqualifier@development
-  - uses:
-    - plugin: ubiquity-whilefoo/plugin-test-2@main
+    - plugin: ubiquity-whilefoo/personal-agent-bridge@development
