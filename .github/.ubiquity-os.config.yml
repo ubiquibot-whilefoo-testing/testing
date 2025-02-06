@@ -34,6 +34,11 @@ plugins:
     - plugin: http://localhost:4005
       with:
         model: "gpt-4o-mini"
+  - uses:
+    - plugin: http://localhost:4006
+      with:
+        requiredLabelsToStart:
+          - "Priority: 5 (Emergency)"
   #- uses:
   #  - plugin: ubiquity-whilefoo/daemon-disqualifier@development
   - uses:
