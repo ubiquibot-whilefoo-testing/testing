@@ -1,7 +1,10 @@
 plugins:
   - uses:  
-    - plugin: http://localhost:4001
+    - plugin: ubiquity-whilefoo/daemon-pricing@fix/label-generation
       with:
+        globalConfigUpdate:
+          excludeRepos: []
+        basePriceMultiplier: 1
         labels:
          time:
            - name: "Time: <1 Hour"
