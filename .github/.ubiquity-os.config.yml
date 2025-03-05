@@ -4,7 +4,7 @@ plugins:
       with:
         globalConfigUpdate:
           excludeRepos: []
-        basePriceMultiplier: 1
+        basePriceMultiplier: 1.0
         labels:
          time:
            - name: "Time: <1 Hour"
