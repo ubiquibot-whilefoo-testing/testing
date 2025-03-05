@@ -1,6 +1,6 @@
 plugins:
   - uses:  
-    - plugin: ubiquity-whilefoo/daemon-pricing@development
+    - plugin: ubiquity-whilefoo/daemon-pricing@fix/label-generation
       with:
         globalConfigUpdate:
           excludeRepos: []
