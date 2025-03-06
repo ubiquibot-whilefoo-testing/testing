@@ -1,6 +1,6 @@
 plugins:
   - uses:  
-    - plugin: ubiquity-whilefoo/daemon-pricing@fix/label-generation
+    - plugin: http://localhost:4001
       with:
         globalConfigUpdate:
           excludeRepos: []
