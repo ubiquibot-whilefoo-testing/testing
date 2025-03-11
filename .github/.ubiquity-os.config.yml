@@ -47,4 +47,4 @@ plugins:
   #- uses:
   #  - plugin: ubiquity-whilefoo/daemon-disqualifier@development
   - uses:
-    - plugin: ubiquity-whilefoo/command-ask@gdrive
+    - plugin: ubiquity-whilefoo/command-ask
