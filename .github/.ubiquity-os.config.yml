@@ -44,7 +44,9 @@ plugins:
       with:
         requiredLabelsToStart:
           - name: "Priority: 5 (Emergency)"
-  #- uses:
-  #  - plugin: ubiquity-whilefoo/daemon-disqualifier@development
+  - uses:
+    - plugin: ubiquity-whilefoo/daemon-pull-review@fix-list-reviews
+      with:
+        reviewInterval: "5 min"
   - uses:
     - plugin: ubiquity-whilefoo/command-ask@gdrive
