@@ -51,3 +51,5 @@ plugins:
         reviewInterval: "5 min"
   - uses:
     - plugin: ubiquity-whilefoo/command-ask@gdrive
+      with:
+        openAiBaseUrl: https://openrouter.ai/api/v1
