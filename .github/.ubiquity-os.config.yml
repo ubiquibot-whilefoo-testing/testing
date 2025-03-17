@@ -46,7 +46,7 @@ plugins:
         requiredLabelsToStart:
           - name: "Priority: 5 (Emergency)"
   - uses:
-    - plugin: ubiquity-whilefoo/daemon-pull-review@fix-cross-repo
+    - plugin: ubiquity-whilefoo/daemon-pull-review@fix-can-perform-review
       with:
         reviewInterval: "5 min"
   - uses:
