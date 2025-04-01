@@ -53,3 +53,5 @@ plugins:
     - plugin: ubiquity-whilefoo/command-ask@gdrive
       with:
         openAiBaseUrl: https://openrouter.ai/api/v1
+  - uses:
+    - plugin: ubiquity-whilefoo/personal-agent-bridge@bridge
