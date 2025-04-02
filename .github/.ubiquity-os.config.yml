@@ -26,10 +26,14 @@ plugins:
         evmPrivateEncrypted: "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
         automaticTransferMode: true
         incentives:
-          contentEvaluator: {}
+          contentEvaluator: 
+            llm:
+              model: "google/gemini-2.5-pro-exp-03-25:free"
           userExtractor: {}
           dataPurge: {}
           formattingEvaluator: {}
+          reviewIncentivizer: {}
+          eventIncentives: {}
           permitGeneration: {}
           githubComment: {}
   - uses:
@@ -46,12 +50,14 @@ plugins:
         requiredLabelsToStart:
           - name: "Priority: 5 (Emergency)"
   - uses:
-    - plugin: ubiquity-whilefoo/daemon-pull-review@retry
+    - plugin: ubiquity-whilefoo/daemon-pull-review@development
       with:
         reviewInterval: "5 min"
+        openRouterAiModel: "google/gemini-2.5-pro-exp-03-25:free"
   - uses:
-    - plugin: ubiquity-whilefoo/command-ask@gdrive
+    - plugin: ubiquity-whilefoo/command-ask@development
       with:
-        openAiBaseUrl: https://openrouter.ai/api/v1
+        model: "google/gemini-2.5-pro-exp-03-25:free"
+        openAiBaseUrl: "https://openrouter.ai/api/v1"
   - uses:
     - plugin: ubiquity-whilefoo/personal-agent-bridge@bridge
