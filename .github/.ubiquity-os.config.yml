@@ -24,7 +24,6 @@ plugins:
         evmNetworkId: 31337
         erc20RewardToken: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
         evmPrivateEncrypted: "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
-        automaticTransferMode: true
         incentives:
           contentEvaluator: 
             llm:
@@ -35,6 +34,8 @@ plugins:
           reviewIncentivizer: {}
           eventIncentives: {}
           permitGeneration: {}
+          payment:
+            automaticTransferMode: true
           githubComment: {}
   - uses:
     - plugin: http://localhost:4002
