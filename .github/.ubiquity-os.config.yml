@@ -51,7 +51,7 @@ plugins:
         taskAccessControl:
           usdPriceMax:
             collaborator: 100
-            contributor: 10
+            contributor: 50
   - uses:
     - plugin: ubiquity-whilefoo/daemon-pull-review@development
       with:
