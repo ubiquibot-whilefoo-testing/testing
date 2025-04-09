@@ -48,8 +48,10 @@ plugins:
   - uses:
     - plugin: http://localhost:4006
       with:
-        requiredLabelsToStart:
-          - name: "Priority: 5 (Emergency)"
+        taskAccessControl:
+          usdPriceMax:
+            collaborator: 100
+            contributor: 10
   - uses:
     - plugin: ubiquity-whilefoo/daemon-pull-review@development
       with:
