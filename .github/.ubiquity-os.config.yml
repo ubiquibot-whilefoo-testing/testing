@@ -21,9 +21,10 @@ plugins:
   - uses:
     - plugin: http://localhost:4000
       with:
-        evmNetworkId: 1 # anvil 31337
-        erc20RewardToken: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" 
-        evmPrivateEncrypted: "3sHCNUhVm30yddOvvBOYjdXdp1P4y_2gCp5bxKGKRxcubasWocnlt_lP0zLXdsa8JogSsjP3MrZ_m8V651aW-2tvjOcw23oCsd_-IeHFBXErD6kdUq_N9Wm36JHr3vSK0iBCiop7mQAM7_JPqcaugPOvTG-KlUvZHQw" # anvil test acc "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
+        permits:
+          evmNetworkId: 1 # anvil 31337
+          erc20RewardToken: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" 
+          evmPrivateEncrypted: "3sHCNUhVm30yddOvvBOYjdXdp1P4y_2gCp5bxKGKRxcubasWocnlt_lP0zLXdsa8JogSsjP3MrZ_m8V651aW-2tvjOcw23oCsd_-IeHFBXErD6kdUq_N9Wm36JHr3vSK0iBCiop7mQAM7_JPqcaugPOvTG-KlUvZHQw" # anvil test acc "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
         incentives:
           contentEvaluator: 
             llm:
