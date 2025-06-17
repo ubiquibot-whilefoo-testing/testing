@@ -34,6 +34,7 @@ plugins:
           dataPurge: {}
           formattingEvaluator: {}
           reviewIncentivizer: {}
+          externalContent: {}
           eventIncentives: {}
           permitGeneration: {}
           payment:
