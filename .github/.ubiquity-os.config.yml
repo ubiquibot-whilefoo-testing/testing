@@ -66,4 +66,4 @@ plugins:
         model: "deepseek/deepseek-r1-zero:free"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - uses:
-    - plugin: ubiquity-whilefoo/text-vector-embeddings@feat/batch-update
+    - plugin: ubiquity-whilefoo/daemon-merging@fix/kv
