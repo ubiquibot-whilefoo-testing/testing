@@ -64,6 +64,6 @@ plugins:
     - plugin: ubiquity-whilefoo/command-ask@development
       with:
         model: "deepseek/deepseek-r1-0528:free"
-        openAiBaseUrl: "https://openrouter.ai/api/v1"
+        openRouterBaseUrl: "https://openrouter.ai/api/v1"
   - uses:
     - plugin: ubiquity-whilefoo/text-vector-embeddings@feat/batch-update
