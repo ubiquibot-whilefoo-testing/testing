@@ -29,7 +29,7 @@ plugins:
           contentEvaluator: 
             originalAuthorWeight: 0.7
             llm:
-              model: "openai/gpt4.1"
+              model: "deepseek/deepseek-r1-0528:free"
           userExtractor: {}
           dataPurge: {}
           formattingEvaluator: {}
@@ -59,11 +59,11 @@ plugins:
     - plugin: ubiquity-whilefoo/daemon-pull-review@development
       with:
         reviewInterval: "5 min"
-        openRouterAiModel: "google/gemini-2.5-pro-exp-03-25:free"
+        openRouterAiModel: "deepseek/deepseek-r1-0528:free"
   - uses:
-    - plugin: ubiquity-whilefoo/command-ask@document-parsing
+    - plugin: ubiquity-whilefoo/command-ask@development
       with:
-        model: "deepseek/deepseek-r1-zero:free"
+        model: "deepseek/deepseek-r1-0528:free"
         openAiBaseUrl: "https://openrouter.ai/api/v1"
   - uses:
     - plugin: ubiquity-whilefoo/text-vector-embeddings@feat/batch-update
