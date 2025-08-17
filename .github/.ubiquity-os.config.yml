@@ -61,6 +61,12 @@ plugins:
         reviewInterval: "5 min"
         openRouterAiModel: "deepseek/deepseek-r1-0528:free"
   - uses:
+    - plugin: ubiquity-whilefoo/daemon-disqualifier@fix/kv
+      with:
+        pullRequestRequired: false
+        followUpInterval: "1 min"
+        negligenceThreshold: "2 min"
+  - uses:
     - plugin: ubiquity-whilefoo/command-ask@development
       with:
         model: "deepseek/deepseek-r1-0528:free"
