@@ -2,6 +2,9 @@ plugins:
   - uses:  
     - plugin: http://localhost:4001
       with:
+        globalConfigUpdate:
+          excludeRepos: []
+        basePriceMultiplier: 1.0
         labels:
          time:
            - name: "Time: <1 Hour"
@@ -18,13 +21,24 @@ plugins:
   - uses:
     - plugin: http://localhost:4000
       with:
-        evmPrivateEncrypted: kmpTKq5Wh9r9x5j3U9GqZr3NYnjK2g0HtbzeUBOuLC2y3x8ja_SKBNlB2AZ6LigXHP_HeMitftVUtzmoj8CFfVP9SqjWoL6IPku1hVTWkdTn97g1IxzmjydFxjdcf0wuDW1hvVtoq3Uw5yALABqxcQ
+        rewards:
+          evmNetworkId: 100
+          erc20RewardToken: "0x7f80D9bCbF5bF12E1E5D845b1251690f99E2dAc4" # USDC:"0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" 
+          evmPrivateEncrypted: "63Z_Nvbxdq3DJ3PdG1GumzE8PO9YErcXSvb0Fyuw6WwTT7sS7_QbSYCZZjQgsU__vlMJ4DoYc7BFnOlobbx5CNKJnzZbjvSL1H6OGJoJ80uHJjbq_TIJTIaJmMPQCGEud6RVDOSFdgr6yq2UwQBApCKukRqlfoQmAtQ" #anvil test acc: "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
         incentives:
-          contentEvaluator: {}
+          contentEvaluator: 
+            originalAuthorWeight: 0.7
+            llm:
+              model: "deepseek/deepseek-r1-0528:free"
           userExtractor: {}
           dataPurge: {}
           formattingEvaluator: {}
+          reviewIncentivizer: {}
+          externalContent: {}
+          eventIncentives: {}
           permitGeneration: {}
+          payment:
+            automaticTransferMode: false
           githubComment: {}
   - uses:
     - plugin: http://localhost:4002
@@ -35,6 +49,27 @@ plugins:
       with:
         model: "gpt-4o-mini"
   - uses:
-    - plugin: ubiquity-whilefoo/daemon-disqualifier@development
+    - plugin: http://localhost:4006
+      with:
+        taskAccessControl:
+          usdPriceMax:
+            collaborator: 100
+            contributor: 50
   - uses:
-    - plugin: ubiquity-whilefoo/plugin-test-2@main
+    - plugin: ubiquity-whilefoo/daemon-pull-review@feat/claude
+      with:
+        reviewInterval: "5 min"
+        openRouterAiModel: "deepseek/deepseek-r1-0528:free"
+  - uses:
+    - plugin: ubiquity-whilefoo/daemon-disqualifier@fix/kv
+      with:
+        pullRequestRequired: false
+        followUpInterval: "1 min"
+        negligenceThreshold: "2 min"
+  - uses:
+    - plugin: ubiquity-whilefoo/command-ask@development
+      with:
+        model: "deepseek/deepseek-r1-0528:free"
+        openRouterBaseUrl: "https://openrouter.ai/api/v1"
+  - uses:
+    - plugin: ubiquity-whilefoo/text-vector-embeddings@feat/batch-update
