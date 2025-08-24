@@ -67,7 +67,7 @@ plugins:
         followUpInterval: "1 min"
         negligenceThreshold: "2 min"
   - uses:
-    - plugin: ubiquity-whilefoo/command-ask@development
+    - plugin: ubiquity-whilefoo/command-ask@feat/claude
       with:
         model: "deepseek/deepseek-r1-0528:free"
         openRouterBaseUrl: "https://openrouter.ai/api/v1"
