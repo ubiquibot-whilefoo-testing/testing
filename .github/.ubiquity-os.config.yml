@@ -56,7 +56,7 @@ plugins:
             collaborator: 100
             contributor: 50
   - uses:
-    - plugin: ubiquity-whilefoo/daemon-pull-review@feat/codex
+    - plugin: ubiquity-whilefoo/daemon-pull-review@feat/codex-test
       with:
         reviewInterval: "5 min"
         openRouterAiModel: "deepseek/deepseek-r1-0528:free"
