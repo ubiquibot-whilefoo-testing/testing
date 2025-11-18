@@ -22,9 +22,10 @@ plugins:
     - plugin: ubiquity-whilefoo/text-conversation-rewards@feat/reward-config-users
       with:
         rewards:
-          evmNetworkId: 100
-          erc20RewardToken: "0x7f80D9bCbF5bF12E1E5D845b1251690f99E2dAc4" # USDC:"0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" 
-          evmPrivateEncrypted: "63Z_Nvbxdq3DJ3PdG1GumzE8PO9YErcXSvb0Fyuw6WwTT7sS7_QbSYCZZjQgsU__vlMJ4DoYc7BFnOlobbx5CNKJnzZbjvSL1H6OGJoJ80uHJjbq_TIJTIaJmMPQCGEud6RVDOSFdgr6yq2UwQBApCKukRqlfoQmAtQ" #anvil test acc: "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
+          collaborator:
+            evmNetworkId: 100
+            erc20RewardToken: "0x7f80D9bCbF5bF12E1E5D845b1251690f99E2dAc4" # USDC:"0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" 
+            evmPrivateEncrypted: "63Z_Nvbxdq3DJ3PdG1GumzE8PO9YErcXSvb0Fyuw6WwTT7sS7_QbSYCZZjQgsU__vlMJ4DoYc7BFnOlobbx5CNKJnzZbjvSL1H6OGJoJ80uHJjbq_TIJTIaJmMPQCGEud6RVDOSFdgr6yq2UwQBApCKukRqlfoQmAtQ" #anvil test acc: "E2G7SWwSLRmT3DADz7fxEJzSk1n-hJq03WGZC_YleRI35ZX2_qR06tpiiYUr9f4L9AGNtJgHVGZt4je6FP3ZSwVIws1F4HiiVq5nT5ktmKFCO4D4ghGtggEDgtoPyPnOZ7IDfqnC7qJR9rC9p4gHHFPfAAL1ZauWUq4"
         incentives:
           contentEvaluator: 
             originalAuthorWeight: 0.7
