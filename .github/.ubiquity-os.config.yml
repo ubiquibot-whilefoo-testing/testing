@@ -19,7 +19,7 @@ plugins:
            - name: "Priority: 4 (Urgent)"
            - name: "Priority: 5 (Emergency)"
   - uses:
-    - plugin: http://localhost:4000
+    - plugin: ubiquity-whilefoo/text-conversation-rewards@feat/reward-config-users
       with:
         rewards:
           evmNetworkId: 100
